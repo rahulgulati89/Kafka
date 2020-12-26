@@ -62,6 +62,6 @@ Under `Parameters` choose `Start from` as `the beginning(earliest)`.
 
 ![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/Consumer2.png)
 
-Click `Start` from bottom left and you will see protobuf messages which have been produced to this topic.
+After choosing all the above settings, Click `Start` from bottom left and you will see protobuf messages which have been produced to this topic in step 2. If you dont see any messages the check your settings again or check your producer.
 
 ![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/Consumer3.png)

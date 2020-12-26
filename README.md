@@ -14,6 +14,7 @@ Once you have configured and connected your cluster in Conduktor, You can create
 
 Once topic is created, it looks like below.
 
+![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/KafkaTopic.png)
 
 Next you need to create a protobuf schema and attach it to the above created topic. To create schema, choose `Schema Registry` from left and click on `CREATE` on top right corner. For creating schema, you need to choose below mentioned options.
 
@@ -37,16 +38,21 @@ message Product {
 }
 ```
 
+![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/ProtobufSchema1.png)
+
 Once your schema is created, it will be shown up in Schema Registry page with name as `$topicname-value`. This is because we have choosen Strategy as `topic name`.
+
+![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/ProtobufSchema2.png)
 
 ## Producer Protobuf Messages to Topic using Java Producer
 
 For this step, we are going to use Java Producer using maven that produces protobuf messages to the topic. You can look at the code in this repository for the same. Note that we are using `protoc-jar-maven-plugin`  plugin which produces protobuf code bindings from our `Product.proto` file so that we can use those in our maven project.
 
-## Consume Protobuf messages from Conduktor
+## Consume Protobuf messages from Conduktor UI
 
 Once protobuf messages are produced to the topic, we can consume those from Conduktor UI. Choose Topics from the left and click on you topic from which you want to consume data. For this demo, we are going to consume data from `testprotobuftopic` topic. Once you have clicked on the topic name, Click on `Consume Data` from top right corner. You will see below mentioned page.
 
+![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/Consumer1.png)
 
 
 Choose below mentioned settings from Conduktor UI to start consuming data from the topic.
@@ -54,4 +60,8 @@ Choose below mentioned settings from Conduktor UI to start consuming data from t
 Under `Format` choose `key` as `String` and `Value` as `Protobuf(Schema Registry)`.
 Under `Parameters` choose `Start from` as `the beginning(earliest)`.
 
+![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/Consumer2.png)
+
 Click `Start` from bottom left and you will see protobuf messages which have been produced to this topic.
+
+![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/Consumer3.png)

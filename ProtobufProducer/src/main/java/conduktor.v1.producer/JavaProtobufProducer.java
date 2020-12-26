@@ -28,8 +28,7 @@ public class JavaProtobufProducer {
         properties.setProperty("acks", "all");
         properties.setProperty("retries", "10");
         properties.setProperty("schema.registry.url", "http://localhost:8081");
-        properties.setProperty("sasl.kerberos.service.name", "kafka");
-        properties.setProperty("security.protocol","SASL_SSL");
+    
 
         Producer<String, ProductProtobuf.Product> producer = new KafkaProducer<String, ProductProtobuf.Product>(properties);
 

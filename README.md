@@ -8,4 +8,5 @@ This blog talks about
 
 ## Create Kafka Topic & Attach Proto Schema ->
 
+![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/CreateKafkaTopic.png)
 

@@ -50,7 +50,7 @@ For this step, we are going to use Java Producer in maven based project. The pro
 
 ## Consume Protobuf messages from Conduktor UI
 
-Once protobuf messages are produced to the topic, we can consume those from Conduktor UI. To do this, you need to Choose Topics from the left pane and click on your topic from which you want to consume data. For this demo, we are going to consume data from our `testprotobuftopic` topic to which We have produced the messages in step 2. Once you are on your topic, Click on `Consume Data` on the top right corner. You will land into below mentioned page.
+Once protobuf messages are produced to the topic, we can consume those from Conduktor UI. To do this, you need to Choose Topics from the left pane and click on your topic from which you want to consume data. For this demo, we are going to consume data from our `testprotobuftopic` topic to which We have produced the messages in step 2. Once you are on your topic, Click on `Consume Data` on the top right corner.
 
 ![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/Consumer1.png)
 

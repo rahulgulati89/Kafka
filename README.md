@@ -46,7 +46,7 @@ Once your schema is created, it will be shown up in Schema Registry page with na
 
 ## Producer Protobuf Messages to Topic using Java Producer
 
-For this step, we are going to use Java Producer using maven that produces protobuf messages to the topic. You can look at the code in this repository for the same. Note that we are using `protoc-jar-maven-plugin`  plugin which produces protobuf code bindings from our `Product.proto` file so that we can use those in our maven project.
+For this step, we are going to use Java Producer in maven based project. The producer will produce messages with key as String and value serialized with Protobuf Serializer. You can look at the code in this repository for the same Java protobuf Producer. Note that we are using `protoc-jar-maven-plugin`  plugin in our maven pom.xml. This is required to generate protobuf code bindings from our `Product.proto` file so that we can use those code bindigs to produce messages with Product type. You just need to compile this maven project('mvn clean' and 'mvn complie') and the code bindings will be generate automatically from this plugin.
 
 ## Consume Protobuf messages from Conduktor UI
 

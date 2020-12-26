@@ -24,10 +24,10 @@ public class JavaProtobufProducer {
 
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, KafkaProtobufSerializer.class);
-        properties.setProperty("bootstrap.servers", "saxovml0034.sys.dom:9092,saxovml0026.sys.dom:9092,saxovml0037.sys.dom:9092");
+        properties.setProperty("bootstrap.servers", "localhost:9092");
         properties.setProperty("acks", "all");
         properties.setProperty("retries", "10");
-        properties.setProperty("schema.registry.url", "http://saxovml0037.sys.dom:8081");
+        properties.setProperty("schema.registry.url", "http://localhost:8081");
         properties.setProperty("sasl.kerberos.service.name", "kafka");
         properties.setProperty("security.protocol","SASL_SSL");
 

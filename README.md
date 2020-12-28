@@ -72,4 +72,4 @@ After choosing all the above settings, Click `Start` from bottom left and you wi
 
 ## Conclusion 
 
-Conduktor continues to grow in capabilities and it provides the options of using Protobuf Schemas with your kafka topics which gives your more and more opportunities to build streaming applications.
+Protocol buffers define how you want your data to be structured so that you can serialize and deserialize messages easily and share data across different platforms.Conduktor continues to grow in capabilities and it provides the options of using Protobuf Schemas with your kafka topics which gives your flexibility and more and more opportunities to build nice streaming applications.

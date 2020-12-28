@@ -1,6 +1,6 @@
 # Conduktor - Produce & Consume Protobuf Messages to Kafka topic
 
-## Brief ->
+## Introduction ->
 
 Protobuf is a method of serializing structured data. Data serialization is important piece in building Streaming solutions as it makes sure that your data is being consistent across your platform.Protobuf messages are defined in `.proto` files and it supports generating code bindings in many different languages including Python, Java, C#, C++, Go etc.
 

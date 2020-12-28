@@ -1,5 +1,9 @@
 # Conduktor - Produce & Consume Protobuf Messages to Kafka topic
 
+## Brief ->
+
+Protobuf is a method of serializing structured data. Data serialization is important piece in building Streaming solutions as it makes sure that your data is being consistent across your platform.Protobuf messages are defined in `.proto` files and it supports generating code bindings in many different languages including Python, Java, C#, C++, Go etc.
+
 This blog talks about 
 
 1. Create Kafka Topic and Protobuf Schema from Conduktor UI.
@@ -65,3 +69,7 @@ Under `Parameters` choose `Start from` as `the beginning(earliest)`.
 After choosing all the above settings, Click `Start` from bottom left and you will see protobuf messages which have been produced to this topic in step 2. If you dont see any messages the check your settings again or check your producer.
 
 ![alt text](https://github.com/rahulgulati89/Kafka/blob/main/Images/Consumer3.png)
+
+## Conclusion 
+
+Conduktor continues to grow in capabilities and it provides the options of using Protobuf Schemas with your kafka topics which gives your more and more opportunities to build streaming applications.
